@@ -94,4 +94,4 @@ This registry defines the specialized capabilities (skills) that AI assistants (
 
 ## Scope Rules
 - **Active Skills Restriction**: All active coding operations must be restricted to the Career Document Analysis skills.
-- **Skills for Social Network Analysis and AI Security Scanning**: Modularity skills for analyzing networks, scanning malicious processes, or performing advanced threat analyses are **strictly deferred**. They must not be utilized or added until explicitly requested by the user.
+- **Skills for AI Security Scanning**: Modularity skills for scanning malicious processes or performing advanced threat analyses are **strictly deferred**. They must not be utilized or added until explicitly requested by the user.

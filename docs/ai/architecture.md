@@ -94,7 +94,6 @@ com.example.demo/
 
 ### Architectural Extension Modularity
 To accommodate future modules without breaking the base layout, those modules will reside in dedicated, isolated root packages alongside `cv` and `job`:
-- `com.example.demo.socialnetwork/` (Social network analysis, future)
 - `com.example.demo.securityanalysis/` (AI-driven malicious upload scanners, future)
 - `com.example.demo.risk/` (Fraud / credibility analysis, future)
 

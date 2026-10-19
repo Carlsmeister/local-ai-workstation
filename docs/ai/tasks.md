@@ -594,5 +594,4 @@ None
 ---
 
 ## Future Ideas (Out of Active Scope)
-* **Social Network Pathway Mapper**: Map contacts from LinkedIn exports (Phase 13 boundary).
 * **AI Binary Ingestion Threat Scanner**: Advanced virus scanning of PDFs using localized LLM patterns (Phase 13 boundary).

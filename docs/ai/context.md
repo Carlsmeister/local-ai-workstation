@@ -62,7 +62,6 @@ End-User Browser -> Deployed Frontend UI -> Spring Boot API Server -> Server-Sid
 To avoid premature optimization, our current active scope is limited to the **Career Document Analysis** module. 
 
 Future modules are conceptually acknowledged for architectural modularity but **must not be implemented, planned in detail, or coded** at this stage:
-- **Social Network Analysis (SNA)**: Map professional contacts and analyze potential referral paths.
 - **AI-Assisted Security Analysis**: Detect prompt injection or malicious instructions embedded in incoming files.
 - **Broader Document Intelligence**: Generalized parsing and indexing of tax, legal, or utility documents.
 - **Risk Assessment**: Analyze document completeness and credibility profiles.
