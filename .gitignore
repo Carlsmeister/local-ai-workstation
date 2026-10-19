@@ -1,3 +1,11 @@
+# Personal documents never belong in this public repo. Test fixtures are
+# fictional and must be listed here one by one.
+*.pdf
+*.doc
+*.docx
+*.odt
+!src/test/resources/fixtures/sample_resume.pdf
+
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
