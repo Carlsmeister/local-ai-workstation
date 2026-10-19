@@ -37,24 +37,17 @@ public class TikaParserServiceTest {
 
     @Test
     void testParseRealPdfFixture() throws Exception {
-        try (InputStream inputStream = getClass().getResourceAsStream("/fixtures/cv_sample.pdf")) {
-            assertNotNull(inputStream, "Test fixture cv_sample.pdf not found in classpath!");
+        try (InputStream inputStream = getClass().getResourceAsStream("/fixtures/sample_resume.pdf")) {
+            assertNotNull(inputStream, "Test fixture sample_resume.pdf not found in classpath!");
             
             String result = tikaParserService.parse(inputStream);
             
             assertNotNull(result);
             assertFalse(result.trim().isEmpty(), "Extracted text should not be empty");
             
-            // Check for common CV headings/keywords or applicant's name
             String lowerResult = result.toLowerCase();
-            boolean hasExpectedKeyword = lowerResult.contains("carl") 
-                    || lowerResult.contains("lundholm") 
-                    || lowerResult.contains("experience") 
-                    || lowerResult.contains("education") 
-                    || lowerResult.contains("cv")
-                    || lowerResult.contains("curriculum");
-            
-            assertTrue(hasExpectedKeyword, "Extracted text should contain CV-related keywords or applicant name");
+            assertTrue(lowerResult.contains("john doe"), "Extracted text should contain the fixture's applicant name");
+            assertTrue(lowerResult.contains("professional experience"), "Extracted text should contain the experience heading");
         }
     }
 }
