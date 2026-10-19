@@ -20,7 +20,7 @@ Before performing any task, the AI assistant must read files in this exact order
 ## Non-Negotiable Rules
 1. **Local-First Runtime**: The runtime AI must remain local-first using Ollama (`gemma4:2eb` model) unless explicitly updated by an Architecture Decision Record (ADR). Cloud AI APIs are strictly forbidden for core runtime features.
 2. **Strict Factual Integrity**: Under no circumstances should runtime AI prompts or code invent, fabricate, or embellish achievements, work experience, education, skills, certifications, or dates for the user. Rewrites must preserve the original factual meaning.
-3. **Focused MVP Scope**: Focus exclusively on the **Career Document Analysis** module. Do not implement or over-engineer future extension modules (e.g., Social Network Analysis, AI-assisted security analysis) yet.
+3. **Focused MVP Scope**: Focus exclusively on the **Career Document Analysis** module. Do not implement or over-engineer future extension modules (e.g., AI-assisted security analysis) yet.
 4. **Thin Controllers & Rich Services**: No business or AI logic is allowed in controllers. Controllers parse requests, delegate to services, and return validated DTOs.
 5. **No Blind Abstractions**: Write concrete, highly testable code for the active phase. Do not build generic interfaces or abstract classes for features that are not yet planned or implemented.
 

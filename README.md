@@ -1,1 +1,1 @@
-A local-first AI system combining Retrieval-Augmented Generation (RAG) and Social Network Analysis (SNA). Built with Spring Boot, Spring AI, Ollama, and │ PostgreSQL pgvector to parse unstructured documents, perform semantic search, and map complex data relationships. 
+A local-first AI system for career documents. Upload a CV and local agents analyse it, match it to job ads and suggest rewrites. Built with Spring Boot, Spring AI, Ollama and PostgreSQL pgvector. Nothing leaves your machine.
